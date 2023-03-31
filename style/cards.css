@@ -1,0 +1,26 @@
+.card-container .card .type{
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card-container .card .date{
+  color: var(--color-grey)!important;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card-container .card .text{
+  font-size: 1.3rem;
+  display: -webkit-box;
+  max-width: 345px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.card-container .card a{
+  color: var(--color-primary)!important;
+  font-size: 1.3rem;
+}
