@@ -48,9 +48,13 @@ body{
   height: 70px;
 }
 
+.navbar .icons{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .navbar a{
   color: var(--color-grey)!important;
-  text-decoration: underline;
 }
 
 .navbar .subscribe{
@@ -60,12 +64,15 @@ body{
 
 .navbar .heading{
  font-size: 3rem;
- text-decoration: underline;
 }
 
 .navbar .search{
   width: 16px;
   margin-top: 12px;
+}
+
+.navbar .search:hover{
+  cursor: pointer;
 }
 
 .card-container{
@@ -111,4 +118,24 @@ footer .row{
 
 footer .row a{
   color: var(--color-primary);
+}
+
+@media only screen and (max-width: 810px) {
+  body{
+    width: 100%;
+  }
+
+  .navbar{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card-container .card{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card-container .card .text{
+    max-width: 100%!important;
+  }
 }

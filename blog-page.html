@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 1 - Personal Blog</title>
+  <link target="_blank" href="style/mainStyle.css" rel="stylesheet">
+  <link target="_blank" href="style/cards.css" rel="stylesheet">
+  <link target="_blank" href="style/blog.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar times">
+    <div class="subscribe"><a target="_blank" href="https://www.google.com/"><u>Subscribe</u></a></div>
+    <header class="form-signup__header"><h1 class="heading"><u>Blog Tile</u></h1></header>
+    <div class="icons">
+      <img class="search" src="src/simple-grey-search-icon.png">
+      <button id="burgerBtn"><img id="burger" class="burger" src="src/Hamburger_icon.png"></button>
+    </div>
+  </nav>
+  <main>
+    <section class="content">
+      <h1 class="heading times">Sample blog post</h1>
+      <p class="date">January 1, 2014 by <a target="_blank" href="https://www.google.com/">Mark</a></p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit molestiae animi facere impedit? Doloremque laudantium, saepe impedit quia ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <div class="border-btn"></div>
+      <p class="text">Lorem ipsum dolor sit amet consectetur <a href="">veniam maiores voluptatibus</a> adipisicing elit. Molestias fugit molestiae animi facere impedit? Doloremque laudantium, saepe impedit quia ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <p class="text border">Lorem ipsum dolor sit amet <b>Consectetur adipisicing elit</b> Molestias fugit molestiae animi facere impedit? Doloremque laudantium, saepe impedit quia ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <p class="text">Lorem ipsum dolor sit amet facere impedit? Doloremque ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <h2 class="times subhead">Heading</h2>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit molestiae animi facere impedit? Doloremque laudantium, saepe impedit quia ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <h1 class="times subhead2">Sub-heading</h1>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing impedit quia ipsum temporibus harum esse.</p>
+      <p class="text border">Lorem ipsum dolor sit facere imped harum esse.</p>
+      <p class="text">Lorem ipsum dolor sit amet facere impedit? Doloremque ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <h1 class="times subhead2">Sub-heading</h1>
+      <p class="text">Lorem ipsum dolor sit amet facere impedit? Doloremque ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <ul class="text list">
+        <li>Lorem ipsum dolor sit amet facere impedit</li>
+        <li>Lorem ipsum dolor sit amet facere impedit</li>
+        <li>Lorem ipsum dolor sit amet facere impedit</li>
+      </ul>
+      <p class="text">Lorem ipsum dolor sit amet facere impedit? Doloremque ipsum veniam maiores voluptatibus exercitationem, doloribus aliquam rem temporibus harum esse.</p>
+      <ol class="text list">
+        <li>Lorem ipsum dolor sit amet facere impedit</li>
+        <li>Lorem ipsum dolor sit amet facere impedit dolor sit amet facere impedit dolor sit amet facere impedit</li>
+        <li>Lorem ipsum dolor sit amet facere impedit</li>
+      </ol>
+      <section class="buttons">
+        <button class="old button clickable">Older Post</button>
+        <button class="new button">Newer Post</button>
+      </section>
+    </section>
+    <section id="side" class="side">
+      <div class="box side-section">
+        <h2 class="times"><i>About</i></h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis dolorem ad voluptates blanditiis accusantium ut accusamus necessitatibus sequi quos ratione amet eveniet, consectetur laudantium quod repellendus labore quia nemo.</p>
+      </div>
+
+      <div class="side-section">
+        <h2 class="times subhead"><i>Archive</i></h3>
+        <p class="archives text">
+          <a href="">March 2014</a><br>
+          <a href="">February 2014</a><br>
+          <a href="">January 2014</a><br>
+          <a href="">December 2013</a><br>
+          <a href="">November 2013</a><br>
+          <a href="">August 2013</a><br>
+          <a href="">July 2013</a><br>
+          <a href="">June 2013</a><br>
+          <a href="">May 2013</a><br>
+          <a href="">April 2013</a>
+        </p>
+      </div>
+
+      <div class="side-section">
+        <h2 class="times subhead"><i>Elsewhere</i></h3>
+        <p class="archives text">
+          <a href="">Github</a><br>
+          <a href="">Twitter</a><br>
+          <a href="">Facebook</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row">
+      <p>Blog template built for <span><a class="" target="_blank" href="">Bootstrap</a></span></p>
+    </div>
+    <div class="row">
+      <a target="_blank" href="">See Design system</a>
+    </div>
+  </footer>
+</body>
+
+<script>
+  const btn = document.getElementById("burgerBtn");
+  const side = document.getElementById("side");
+  btn.addEventListener("click", myFunction);
+  
+  function myFunction() {
+    side.style.display = "block";
+    if(btn.classList.contains("clicked")){
+      side.style.display = "none";
+      btn.classList.remove("clicked")
+    } else{
+      side.style.display = "block";
+      btn.classList.add("clicked")
+    }
+    
+  }
+  </script>
+</html>
